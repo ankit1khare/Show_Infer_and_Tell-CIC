@@ -255,7 +255,6 @@ class TopDownCore(nn.Module):
     def __init__(self, opt, use_maxout=False):
         super(TopDownCore, self).__init__()
         self.drop_prob_lm = opt.drop_prob_lm
-#         pdb.set_trace()
         
         self.att_lstm = nn.LSTMCell(opt.input_encoding_size + opt.rnn_size * 2, opt.rnn_size) # we, fc, h^2_t-1
         self.lang_lstm = nn.LSTMCell(opt.rnn_size * 3, opt.rnn_size) # h^1_t, \hat v
@@ -316,7 +315,6 @@ class Attention(nn.Module):
 
 class TopDownModel(AttModel):
     def __init__(self, opt):
-#         pdb.set_trace()
         super(TopDownModel, self).__init__(opt)
-#         self.num_layers = 2
+        self.num_layers = 2
         self.core = TopDownCore(opt)

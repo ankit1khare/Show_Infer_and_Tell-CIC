@@ -377,7 +377,6 @@ class AttModel_TxtCon(CaptionModel_txtcon):
         batch_size = fc_feats.size(0)       
         state = self.init_hidden(batch_size)
         outputs = fc_feats.new_zeros(batch_size, seq.size(1) - 1, self.vocab_size+1)
-#         pdb.set_trace()
         # Prepare the features
         p_fc_feats, p_att_feats, pp_att_feats, p_att_masks = self._prepare_feature(fc_feats, att_feats, att_masks)
         # pp_att_feats is used for attention, we cache it in advance to reduce computation cost
@@ -443,7 +442,7 @@ class AttModel_TxtCon(CaptionModel_txtcon):
         beam_size = opt.get('beam_size', 1)
         temperature = opt.get('temperature', 1.0)
         decoding_constraint = opt.get('decoding_constraint', 0)
-        if beam_size > 1: #AK for pa beam thing e
+        if beam_size > 1: 
             return self._sample_beam(fc_feats, att_feats, att_masks, opt)
 
         batch_size = fc_feats.size(0)

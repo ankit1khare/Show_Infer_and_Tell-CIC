@@ -156,23 +156,11 @@ opt.seq_length = loader.seq_length
 
 # Setup the model
 model = models.setup(opt).cuda(opt.device_num) #models_ultra
-'''NEVER COMMENT THIS, IT LOADS MODEL IN GPU. EQUIVALENT TO START_FROM IN TRAINING'''
 model.load_state_dict(torch.load(opt.model, map_location=lambda storage, loc: storage)) 
 # torch.load('./snapshots/cpu_final_snapshot.pth', map_location=lambda storage, loc: storage)
 # model.cuda(opt.device_num)
 model.eval()
 crit = utils.LanguageModelCriterion()
-# Create the Data Loader instance
-# if len(opt.image_folder) == 0:
-#   loader = DataLoader(opt)
-# else:
-#   loader = DataLoaderRaw({'folder_path': opt.image_folder, 
-#                             'coco_json': opt.coco_json,
-#                             'batch_size': opt.batch_size,
-#                             'cnn_model': opt.cnn_model})
-# When eval using provided pretrained model, the vocab may be different from what you have in your cocotalk.json
-# So make sure to use the vocab in infos file.
-# loader.ix_to_word = infos['vocab']
 
 # Set sample options
 '''loss is not used'''

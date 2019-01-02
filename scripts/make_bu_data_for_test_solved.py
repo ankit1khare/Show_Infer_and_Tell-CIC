@@ -59,9 +59,7 @@ for infile in infiles:
     
             if len(item['features']) % 4 != 0 or len(item['boxes']) % 4 != 0:
                 continue
-                # print(item['image_id'])
-                #pdb.set_trace()
-            
+               
             for field in ['boxes', 'features']:
                 item[field] = np.frombuffer( decode_base64(item[field]), 
                         dtype=np.float32).reshape((item['num_boxes'],-1))

@@ -129,7 +129,7 @@ def parse_opt():
     parser.add_argument('--bleu_reward_weight', type=float, default=0,
                     help='The reward weight from bleu4')
 
-    args = parser.parse_args(args=[]) # args=[] check how and remove before using opts for models or eval
+    args = parser.parse_args(args=[]) # args=[]
 
     # Check if args are valid
     assert args.rnn_size > 0, "rnn_size should be greater than 0"

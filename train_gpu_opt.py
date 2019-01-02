@@ -125,20 +125,15 @@ def train(opt):
         data = loader.get_batch('train')
         print('Read data:', time.time() - start)
         '''checking data object'''
-#         print(type(data))
-#         print(list(data))
-#         pdb.set_trace()
         
         torch.cuda.synchronize()
         start = time.time()
         tmp = [data['fc_feats'], data['att_feats'], data['labels'], data['masks'], data['att_masks']]
         tmp = [_ if _ is None else torch.from_numpy(_).cuda(opt.device_num) for _ in tmp]
-#         pdb.set_trace()
         fc_feats, att_feats, labels, masks, att_masks = tmp
         
         optimizer.zero_grad()
         if not sc_flag:
-#             pdb.set_trace()
             loss = crit(dp_model(fc_feats, att_feats, labels, att_masks), labels[:,1:], masks[:,1:])
             
         else:  

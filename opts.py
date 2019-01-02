@@ -137,7 +137,7 @@ def parse_opt():
     parser.add_argument('--server_upload', type=int, default=0,
                     help='creating json for uploading to test server if value is 1 else local eval')
     
-    args = parser.parse_args() # args=[] check how and remove before using opts for models or eval
+    args = parser.parse_args() 
 
     # Check if args are valid
     assert args.rnn_size > 0, "rnn_size should be greater than 0"

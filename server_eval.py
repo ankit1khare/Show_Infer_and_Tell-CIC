@@ -132,8 +132,6 @@ model.eval()
 
 predictions = []
 n=0
-# last_batch_size = data['bounds']['it_max'] % opt.batch_size
-# iterations = data['bounds']['it_max'] // opt.batch_size
 
 #start reading data and fetching from model
 while True:
@@ -151,7 +149,6 @@ while True:
     torch.cuda.synchronize()
     end = time.time()
     print("images done = {}, time/batch = {:.3f}".format(n, end - start))
-#     pdb.set_trace()
     if opt.beam_size > 1:
         for i in range(loader.batch_size):
             print('\n'.join([utils.decode_sequence(loader.get_vocab(), _['seq'].unsqueeze(0))[0] for _ in model.done_beams[i]])) 

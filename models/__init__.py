@@ -14,10 +14,10 @@ from .AttModel import *
 
 def setup(opt):
     if opt.caption_model == 'topdown_pa':
-        model = TopDownModel(opt) #pending change to include all files here and then send the type in opt
+        model = TopDownModel(opt) 
 #     elif opt.caption_model == 'txtcon_512':
 #         model = TxtCon512Model(opt)
-    elif opt.caption_model == 'txtcon_1024': #later change to txtcon only
+    elif opt.caption_model == 'txtcon_1024': 
         model = TxtConModel(opt)
     elif opt.caption_model == 'lt_1024_rl':
         model = Lt1024RLModel(opt)

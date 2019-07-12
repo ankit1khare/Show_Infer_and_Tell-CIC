@@ -1,4 +1,4 @@
-# Ultra_Context_Image_Captioner
+# Show, Infer and Tell: Contextual Inference for Creative Captioning
 Code for the paper, "Show, Infer and Tell: Contextual Inference for Creative Captioning"
 
 ## Code supports:

@@ -26,14 +26,14 @@ Code includes COCO split option and evaluation script for testing on COCO server
 ## Reference
 If you use the code, please consider citing:
 ```
-@article{luo2018discriminability,
-  title={Discriminability objective for training descriptive captions},
-  author={Luo, Ruotian and Price, Brian and Cohen, Scott and Shakhnarovich, Gregory},
-  journal={arXiv preprint arXiv:1803.04376},
-  year={2018}
+@article{Show, Infer and Tell: Contextual Inference for Creative Captioning,
+  title={Show, Infer and Tell: Contextual Inference for Creative Captioning},
+  author={Ankit Khare, Manfred Huber},
+  journal={BMVC},
+  year={2019}
 }
 ```
 
 ## Acknowledgements
-Thanks to google cloud for giving free trial credits, the original [neuraltalk2](https://github.com/karpathy/neuraltalk2), awesome PyTorch team and [rluo](https://github.com/ruotianluo/self-critical.pytorch).
+Thanks to google cloud for giving free trial credits, the original [neuraltalk2](https://github.com/karpathy/neuraltalk2),  [rluo](https://github.com/ruotianluo/self-critical.pytorch) and awesome PyTorch team.
 

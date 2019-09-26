@@ -1,7 +1,7 @@
 # Show, Infer and Tell: Contextual Inference for Creative Captioning
 Code for the paper, "Show, Infer and Tell: Contextual Inference for Creative Captioning". Paper link: https://bmvc2019.org/wp-content/uploads/papers/0655-paper.pdf 
 
-The research has been selected for ORAL paper presentations in BMVC 2019. It further received Best Student Paper Award Honourable Mention during the conference.  
+**The research has been selected for ORAL paper presentations in BMVC 2019. It further received Best Student Paper Award Honourable Mention during the conference.**  
 
 ## Code supports:
 - Self Critical Sequence Training

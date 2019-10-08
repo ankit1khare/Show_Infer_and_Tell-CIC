@@ -28,11 +28,9 @@ Code includes COCO split option and evaluation script for testing on COCO server
 ## Reference
 If you use the code, please consider citing:
 ```
-@article{Show, Infer and Tell: Contextual Inference for Creative Captioning,
+@article{khareshow,
   title={Show, Infer and Tell: Contextual Inference for Creative Captioning},
-  author={Ankit Khare, Manfred Huber},
-  journal={BMVC},
-  year={2019}
+  author={Khare, Ankit and Huber, Manfred}
 }
 ```
 

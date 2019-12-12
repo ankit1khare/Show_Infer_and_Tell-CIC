@@ -1,7 +1,8 @@
 # Show, Infer and Tell: Contextual Inference for Creative Captioning
+**Top 4.6% ORAL in 30<sup>th</sup> British Machine Vision Conference 2019 and Best Student Paper Award Honourable Mention**  
+
 Code for the paper, "Show, Infer and Tell: Contextual Inference for Creative Captioning". Paper link: https://bmvc2019.org/wp-content/uploads/papers/0655-paper.pdf 
 
-**The research has been selected for ORAL paper presentations in BMVC 2019. It further received Best Student Paper Award Honourable Mention during the conference.**  
 
 ## Code supports:
 - Self Critical Sequence Training
@@ -28,9 +29,11 @@ Code includes COCO split option and evaluation script for testing on COCO server
 ## Reference
 If you use the code, please consider citing:
 ```
-@article{khareshow,
-  title={Show, Infer and Tell: Contextual Inference for Creative Captioning},
-  author={Khare, Ankit and Huber, Manfred}
+@inproceedings{khareshow,
+      title={Show, Infer and Tell: Contextual Inference for Creative Captioning},
+      author={Khare, Ankit and Huber, Manfred},
+      booktitle={Proceedings of the British Machine Vision Conference},
+      year={2019}
 }
 ```
 

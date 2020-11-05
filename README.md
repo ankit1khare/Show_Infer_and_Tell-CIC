@@ -29,11 +29,19 @@ Code includes COCO split option and evaluation script for testing on COCO server
 ## Reference
 If you use the code, please consider citing:
 ```
-@inproceedings{khareshow,
-      title={Show, Infer and Tell: Contextual Inference for Creative Captioning},
-      author={Khare, Ankit and Huber, Manfred},
-      booktitle={Proceedings of the British Machine Vision Conference},
-      year={2019}
+@inproceedings{DBLP:conf/bmvc/KhareH19,
+  author    = {Ankit Khare and
+               Manfred Huber},
+  title     = {Show, Infer and Tell: Contextual Inference for Creative Captioning},
+  booktitle = {30th British Machine Vision Conference 2019, {BMVC} 2019, Cardiff,
+               UK, September 9-12, 2019},
+  pages     = {20},
+  publisher = {{BMVA} Press},
+  year      = {2019},
+  url       = {https://bmvc2019.org/wp-content/uploads/papers/0655-paper.pdf},
+  timestamp = {Tue, 21 Apr 2020 23:13:25 +0200},
+  biburl    = {https://dblp.org/rec/conf/bmvc/KhareH19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 

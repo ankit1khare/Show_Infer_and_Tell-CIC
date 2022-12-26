@@ -1,5 +1,5 @@
 # Show, Infer and Tell: Contextual Inference for Creative Captioning
-**Best Student Paper Award Honourable Mention and Top 4.6% ORAL in 30<sup>th</sup> British Machine Vision Conference 2019**  
+**Best Student Paper Award Honourable Mention (Top 0.5%) in 30<sup>th</sup> British Machine Vision Conference 2019**  
 
 Code for the paper, "Show, Infer and Tell: Contextual Inference for Creative Captioning". Paper link: https://bmvc2019.org/wp-content/uploads/papers/0655-paper.pdf 
 

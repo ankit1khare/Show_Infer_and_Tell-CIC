@@ -36,7 +36,7 @@ If you use the code, please consider citing:
   booktitle = {30th British Machine Vision Conference 2019, {BMVC} 2019, Cardiff,
                UK, September 9-12, 2019},
   pages     = {20},
-  publisher = {{BMVA} Press},
+  publisher = {BMVA Press},
   year      = {2019},
   url       = {https://bmvc2019.org/wp-content/uploads/papers/0655-paper.pdf},
   timestamp = {Tue, 21 Apr 2020 23:13:25 +0200},
